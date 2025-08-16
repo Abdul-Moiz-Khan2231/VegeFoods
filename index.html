@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vegefoods</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Animate on Scroll -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+    <div class="container">
+      <a class="navbar-brand text-success fw-bold" href="#">VEGEFOODS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown">SHOP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+              <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+              <li><a class="dropdown-item" href="single-product.html">Single Product</a></li>
+              <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+              <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> [0]</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center text-center">
+    <div data-aos="fade-up">
+      <h1 class="display-4 fw-bold text-white">We Serve Fresh Vegetables & Fruits</h1>
+      <p class="lead text-white">Get your groceries delivered to your door.</p>
+      <a href="#" class="btn btn-success btn-lg">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" data-aos="fade-up">
+          <i class="fas fa-truck fa-3x text-success mb-3"></i>
+          <h5>Free Shipping</h5>
+          <p>On all orders over $50</p>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-leaf fa-3x text-success mb-3"></i>
+          <h5>Fresh Products</h5>
+          <p>100% organic guarantee</p>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-hand-holding-usd fa-3x text-success mb-3"></i>
+          <h5>Superior Quality</h5>
+          <p>Quality Products</p>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-headset fa-3x text-success mb-3"></i>
+          <h5>24/7 Support</h5>
+          <p>We are here for you</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Categories Section -->
+<section class="categories-section py-5" data-aos="fade-up">
+  <div class="container">
+    <div class="row g-3 align-items-center">
+
+      <!-- Left Column -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="category-item" style="background-image: url('images/category-fruits.jpg');">
+          <div class="category-label">Fruits</div>
+        </div>
+        <div class="category-item mt-3" style="background-image: url('images/category-vegetables.jpg');">
+          <div class="category-label">Vegetables</div>
+        </div>
+      </div>
+
+      <!-- Center Column -->
+      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+        <h5 class="text-success">Vegetables</h5>
+        <p>Protect the health of every home</p>
+        <a href="#" class="btn btn-success">Shop now</a>
+        <div class="category-item mt-3" style="background-image: url('images/category-center.jpg'); height: 300px;">
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="category-item" style="background-image: url('images/category-juices.jpg');">
+          <div class="category-label">Juices</div>
+        </div>
+        <div class="category-item mt-3" style="background-image: url('images/category-dried.jpg');">
+          <div class="category-label">Dried</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Featured Products -->
+<section id="shop" class="products py-5 bg-light" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up" data-aos-delay="50">Featured Products</h2>
+    <div class="row">
+
+      <!-- Product 1 -->
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card product-card">
+          <div class="product-img">
+            <img src="images/product1.jpg" class="card-img-top" alt="Bell Pepper">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Bell Pepper</h5>
+            <p class="product-price text-success">$4.90</p>
+          </div>
+          <div class="product-icons">
+              <a href="#"><i class="fas fa-bars"></i></a>
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="card product-card">
+          <div class="product-img">
+            <img src="images/product2.jpg" class="card-img-top" alt="Strawberry">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Strawberry</h5>
+            <p class="product-price text-success">$5.50</p>
+          </div>
+          <div class="product-icons">
+              <a href="#"><i class="fas fa-bars"></i></a>
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card">
+          <div class="product-img">
+            <img src="images/product3.jpg" class="card-img-top" alt="Green Beans">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Green Beans</h5>
+            <p class="product-price text-success">$3.20</p>
+          </div>
+          <div class="product-icons">
+              <a href="#"><i class="fas fa-bars"></i></a>
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="250">
+        <div class="card product-card">
+          <div class="product-img">
+            <img src="images/product4.jpg" class="card-img-top" alt="Purple Cabbage">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Purple Cabbage</h5>
+            <p class="product-price text-success">$2.90</p>
+          </div>
+          <div class="product-icons">
+              <a href="#"><i class="fas fa-bars"></i></a>
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card product-card">
+          <div class="product-img">
+            <img src="images/product5.jpg" class="card-img-top" alt="Tomato">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Tomato</h5>
+            <p class="product-price text-success">$4.00</p>
+          </div>
+          <div class="product-icons">
+              <a href="#"><i class="fas fa-bars"></i></a>
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="350">
+        <div class="card product-card">
+          <div class="product-img">
+            <img src="images/product6.jpg" class="card-img-top" alt="Broccoli">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Broccoli</h5>
+            <p class="product-price text-success">$3.70</p>
+          </div>
+          <div class="product-icons">
+              <a href="#"><i class="fas fa-bars"></i></a>
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card product-card">
+          <div class="product-img">
+            <img src="images/product7.jpg" class="card-img-top" alt="Carrot">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Carrot</h5>
+            <p class="product-price text-success">$2.50</p>
+          </div>
+          <div class="product-icons">
+              <a href="#"><i class="fas fa-bars"></i></a>
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="450">
+        <div class="card product-card">
+          <div class="product-img">
+            <img src="images/product8.jpg" class="card-img-top" alt="Cucumber">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Fresh Juice</h5>
+            <p class="product-price text-success">$3.10</p>
+          </div>
+          <div class="product-icons">
+              <a href="#"><i class="fas fa-bars"></i></a>
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="deal-of-day">
+  <div class="deal-content">
+    <p class="deal-subtitle">Best Price For You</p>
+    <h2 class="deal-title">Deal of the day</h2>
+    <p class="deal-text">
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+    </p>
+    <h3 class="deal-product">Spinach</h3>
+    <p class="deal-price">
+      <span class="old-price">$10</span> now <span class="new-price">$5</span> only
+    </p>
+
+    <div class="countdown">
+      <div class="time-box">
+        <span id="days">00</span>
+        <small>Days</small>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <small>Hours</small>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <small>Minutes</small>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <small>Seconds</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-section">
+  <p class="section-subtitle">Testimony</p>
+  <h2 class="section-title">Our satisfied customer says</h2>
+  <p class="section-text">
+    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+    there live the blind texts. Separated they live in Bookmarksgrove.
+  </p>
+
+  <div class="testimonial-slider-wrapper">
+    <div class="testimonial-slider">
+
+      <!-- Customer 1 -->
+      <div class="testimonial-card">
+        <img src="images/customer1.jpg" alt="Customer" class="customer-img">
+        <p class="testimonial-quote">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+        </p>
+        <h4 class="customer-name">Garreth Smith</h4>
+        <p class="customer-role">System Analyst</p>
+      </div>
+
+      <!-- Customer 2 -->
+      <div class="testimonial-card">
+        <img src="images/customer2.jpg" alt="Customer" class="customer-img">
+        <p class="testimonial-quote">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+        </p>
+        <h4 class="customer-name">Jane Doe</h4>
+        <p class="customer-role">Marketing Manager</p>
+      </div>
+
+      <!-- Customer 3 -->
+      <div class="testimonial-card">
+        <img src="images/customer3.jpg" alt="Customer" class="customer-img">
+        <p class="testimonial-quote">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+        </p>
+        <h4 class="customer-name">John Lee</h4>
+        <p class="customer-role">Interface Designer</p>
+      </div>
+
+      <!-- Customer 4 -->
+      <div class="testimonial-card">
+        <img src="images/customer4.jpg" alt="Customer" class="customer-img">
+        <p class="testimonial-quote">
+          A wonderful serenity has taken possession of my entire soul.
+        </p>
+        <h4 class="customer-name">John Brown</h4>
+        <p class="customer-role">UX Designer</p>
+      </div>
+
+      <!-- Customer 5 -->
+      <div class="testimonial-card">
+        <img src="images/customer5.jpg" alt="Customer" class="customer-img">
+        <p class="testimonial-quote">
+          I am so happy, my dear friend, so absorbed in the exquisite sense of peace.
+        </p>
+        <h4 class="customer-name">Michael Green</h4>
+        <p class="customer-role">Software Engineer</p>
+      </div>
+
+      <!-- Customer 6 -->
+      <div class="testimonial-card">
+        <img src="images/customer6.jpg" alt="Customer" class="customer-img">
+        <p class="testimonial-quote">
+          I throw myself down among the tall grass by the trickling stream.
+        </p>
+        <h4 class="customer-name">John Bravo</h4>
+        <p class="customer-role">Project Manager</p>
+      </div>
+
+      <!-- Customer 7 -->
+      <div class="testimonial-card">
+        <img src="images/customer7.jpg" alt="Customer" class="customer-img">
+        <p class="testimonial-quote">
+          I feel the charm of existence in this spot.
+        </p>
+        <h4 class="customer-name">Liam Johnson</h4>
+        <p class="customer-role">Data Analyst</p>
+      </div>
+
+      <!-- Customer 8 -->
+      <div class="testimonial-card">
+        <img src="images/customer8.jpg" alt="Customer" class="customer-img">
+        <p class="testimonial-quote">
+          This spot, which was created for the bliss of souls like mine.
+        </p>
+        <h4 class="customer-name">Michael Davis</h4>
+        <p class="customer-role">Graphic Designer</p>
+      </div>
+
+      <!-- Customer 9 -->
+      <div class="testimonial-card">
+        <img src="images/customer9.jpg" alt="Customer" class="customer-img">
+        <p class="testimonial-quote">
+          I am alone, and feel the charm of existence in this spot.
+        </p>
+        <h4 class="customer-name">Ethan Martinez</h4>
+        <p class="customer-role">Product Manager</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Dots -->
+  <div class="testimonial-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+
+
+<!-- Brand Logos Section -->
+<section class="brands">
+  <div class="brand-container">
+    <img src="images/microsoft.png" alt="Microsoft">
+    <img src="images/android.png" alt="Android">
+    <img src="images/java.png" alt="Java">
+    <img src="images/google.png" alt="Google">
+    <img src="images/adobe.png" alt="Adobe">
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter">
+  <div class="newsletter-content">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Get e-mail updates about our latest shops and special offers</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>Vegefoods</h3>
+      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Menu</h3>
+      <ul>
+        <li>Shop</li>
+        <li>About</li>
+        <li>Journal</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Help</h3>
+      <ul>
+        <li>Shipping Information</li>
+        <li>Returns & Exchange</li>
+        <li>Terms & Conditions</li>
+        <li>Privacy Policy</li>
+        <li>FAQs</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Have a Questions?</h3>
+      <ul>
+        <li>203 Fake St. Mountain View, San Francisco, California, USA</li>
+        <li>+2 392 3929 210</li>
+        <li>info@Vegefoods.com</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<script>
+  function startCountdown(endDate) {
+    const targetDate = new Date(endDate).getTime();
+    const countdown = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance <= 0) {
+        clearInterval(countdown);
+        document.getElementById("days").innerText = "00";
+        document.getElementById("hours").innerText = "00";
+        document.getElementById("minutes").innerText = "00";
+        document.getElementById("seconds").innerText = "00";
+        return;
+      }
+
+      document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+      document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
+    }, 1000);
+  }
+
+  // Example: Countdown to 10 days from now
+  const futureDate = new Date();
+  futureDate.setDate(futureDate.getDate() + 30);
+  startCountdown(futureDate);
+</script>
+
+<script>
+  const slider = document.querySelector('.testimonial-slider');
+  const dots = document.querySelectorAll('.dot');
+  let currentIndex = 0;
+  const totalSlides = dots.length;
+
+  function updateSlider(index) {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+  }
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      currentIndex = index;
+      updateSlider(currentIndex);
+    });
+  });
+</script>
+
+<!-- AOS CSS & JS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation speed in ms
+    once: true // Run animation only once
+  });
+</script>
+
+
+
+</body>
+</html>
